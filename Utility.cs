@@ -244,12 +244,11 @@ namespace fellowshipleenaroul
             mergeSort(arr, from, mid);
             mergeSort(arr, mid + 1, to);
             merge(arr, from, mid, to);
-        }// end mergeSort
-         //work
+        }
 
         public static void merge(String[] arr, int from, int mid, int to)
         {
-            int n = to - from + 1;       // size of the range to be merged
+            int n = to - from + 1;       
             String[] b = new String[n];   // merge both halves into a temporary array b
             int i1 = from;               // next element to consider in the first range
             int i2 = mid + 1;            // next element to consider in the second range
@@ -271,8 +270,7 @@ namespace fellowshipleenaroul
                 j++;
             }
 
-            // note that only one of the two while loops below is executed
-            // copy any remaining entries of the first half
+            
             while (i1 <= mid)
             {
                 b[j] = arr[i1];
@@ -280,7 +278,6 @@ namespace fellowshipleenaroul
                 j++;
             }
 
-            // copy any remaining entries of the second half
             while (i2 <= to)
             {
                 b[j] = arr[i2];
@@ -288,7 +285,6 @@ namespace fellowshipleenaroul
                 j++;
             }
 
-            // copy back from the temporary array
             for (j = 0; j < n; j++)
             {
                 arr[from + j] = b[j];
