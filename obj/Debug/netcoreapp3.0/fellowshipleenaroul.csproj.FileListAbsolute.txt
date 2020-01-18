@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.exe
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.deps.json
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.runtimeconfig.json
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.runtimeconfig.dev.json
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.dll
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\bin\Debug\netcoreapp3.0\fellowshipleenaroul.pdb
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.csprojAssemblyReference.cache
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.AssemblyInfo.cs
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.dll
+C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.pdb
