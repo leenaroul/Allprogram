@@ -8,11 +8,18 @@ namespace fellowshipleenaroul.functionprogram
     {
         public static void windChill ()
         {
-            Console.WriteLine(" Enter Value for Temperture (T < 50)");
-            int Temp = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Value for Velocity (3 < V < 120)");
-            int Vel = Convert.ToInt32(Console.ReadLine());
-            Utility.WindChill(Temp, Vel);
+            try
+            {
+                Console.WriteLine(" Enter Value for Temperture (T < 50)");
+                int Temp = Utility.IntegerInput();
+                Console.WriteLine("Enter Value for Velocity (3 < V < 120)");
+                int Vel = Utility.IntegerInput();
+                Utility.WindChill(Temp, Vel);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
             
     }

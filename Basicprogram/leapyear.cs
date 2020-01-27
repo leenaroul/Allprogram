@@ -8,9 +8,18 @@ namespace fellowshipleenaroul.Basicprogram
     {
         public static void Leapyear()
         {
-            Console.WriteLine(" enter 4 digit number");
-            int year = Convert.ToInt32(Console.ReadLine());
-            Utility.leapyearcheck(year);
+            try
+            {
+              Console.WriteLine(" enter 4 digit number");
+              int year = Utility.IntegerInput();
+               Utility.leapyearcheck(year);
+            }
+
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+           
         }
     }
 }

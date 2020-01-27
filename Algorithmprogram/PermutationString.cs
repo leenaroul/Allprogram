@@ -9,16 +9,14 @@ namespace fellowshipleenaroul.Algorithmprogram
         public static void PermutationStringInput()
 
         {
-
             try
-
             {
 
                 int count = 0;
 
                 Console.WriteLine("Enter the String to Generate the permutaion string");
 
-                String string1 = Console.ReadLine();
+                String string1 = Utility.StringInput();
 
                 int length = string1.Length;
 
@@ -31,9 +29,7 @@ namespace fellowshipleenaroul.Algorithmprogram
             catch (Exception ex)
 
             {
-
                 Console.WriteLine(ex.Message);
-
             }
 
         }

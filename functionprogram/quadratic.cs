@@ -8,18 +8,26 @@ namespace fellowshipleenaroul.functionprogram
     {
 
         public static void quadra()
-        { Console.WriteLine(" enter first number");
+        {
+            try
+            {
+                Console.WriteLine(" enter first number");
 
-            double a = Convert.ToDouble(Console.ReadLine());
+                double a = Utility.DoubleInput();
 
-          Console.WriteLine(" enter second number");
+                Console.WriteLine(" enter second number");
 
-            double b = Convert.ToDouble(Console.ReadLine());
-          Console.WriteLine(" enter third number");
+                double b = Utility.DoubleInput();
+                Console.WriteLine(" enter third number");
 
-          double c = Convert.ToDouble(Console.ReadLine());
+                double c = Utility.DoubleInput();
 
-            Utility.quadratic(a, b, c);
-    }
+                Utility.quadratic(a, b, c);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }

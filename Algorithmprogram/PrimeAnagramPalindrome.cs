@@ -16,25 +16,15 @@ using System.Text;
             {
 
                 Console.WriteLine("Enter the lower boundery");
-
-                int lower = Convert.ToInt32(Console.ReadLine());
-
+                int lower = Utility.IntegerInput();
                 Console.WriteLine("Enter Upper boundary");
-
-                int upper = Convert.ToInt32(Console.ReadLine());
-
+                int upper = Utility.IntegerInput();
                 Utility.PrimeNumberArray(lower, upper);
-
             }
-
             catch (Exception ex)
-
             {
-
                 Console.WriteLine(ex.Message);
-
             }
-
         }
 
     }

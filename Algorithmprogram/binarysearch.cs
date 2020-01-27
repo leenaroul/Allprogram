@@ -1,30 +1,24 @@
-﻿using System;
+﻿namespace fellowshipleenaroul.Algorithmprogram
+{
+using System;
 using System.Collections.Generic;
 using System.Text;
-
-namespace fellowshipleenaroul.Algorithmprogram
-{
     class binarysearch
     {
         public static void binary()
         {
-
             try
-
             {
                 Console.WriteLine(" enter number  how many string input");
-                int number = Convert.ToInt32(Console.ReadLine());
+                int number = Utility.IntegerInput();
                 string[] arr = new String[number];
                 Console.WriteLine(" enter string ");
-                
-
                 for (int i = 0; i < number; i++)
                 {
-                    arr[i] = Console.ReadLine();
+                    arr[i] = Utility.StringInput();
                 }
-
                 Console.WriteLine("Which string you want to search ? ");
-                String s = Console.ReadLine();
+                String s = Utility.StringInput();
 
                 int result = Utility.binarySearch(arr, s);
 

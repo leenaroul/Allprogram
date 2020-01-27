@@ -21,13 +21,7 @@ using System.Text;
                 Console.WriteLine(" ");
                 Console.WriteLine("1: Leap year ");
                 Console.WriteLine("2: Power of two ");
-                Console.WriteLine("3: Palindrom ");
-                Console.WriteLine("4: Anagram  ");
-                Console.WriteLine("5: Recursive ");
-                Console.WriteLine("6: Gambler ");
-                Console.WriteLine("7: Random numbers  ");
-                Console.WriteLine("8: Stopwatch ");
-                Console.WriteLine("9: Exit ");
+                Console.WriteLine("3: Exit ");
 
 
                 Console.WriteLine(" ");
@@ -44,11 +38,8 @@ using System.Text;
                     case 2:
                         poweroftwo.power();
                         break;
-
-                    case 3:
-                        break;
                         
-                    case 9:
+                    case 3:
                         Console.WriteLine("Basic Program Exit");
                         flag = false;
                         break;

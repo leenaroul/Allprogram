@@ -8,9 +8,17 @@ namespace fellowshipleenaroul.Basicprogram
     {
         public static void power()
         {
-            Console.WriteLine(" enter number power of two number");
-            int number = Convert.ToInt32(Console.ReadLine());
-            Utility.Poweroftwo(number);
+            try
+            {
+                Console.WriteLine(" enter number power of two number");
+                int number = Utility.IntegerInput();
+                Utility.Poweroftwo(number);
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

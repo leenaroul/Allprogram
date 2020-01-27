@@ -1,110 +1,81 @@
-﻿using System;
+﻿namespace fellowshipleenaroul.Algorithmprogram
+{
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace fellowshipleenaroul.Algorithmprogram
-{
+
     class CustomizeMessage
     {
         public static void StringMessageInput()
-
         {
-            String name = null, phoneNumber = null, dateString = null;
-            Console.WriteLine("Kindly enter following details:");
-            String regex = @"^(?<countryCode>[\+][1-9]{1}[0-9]{0,2}\s)?(?<areaCode>0?[1-9]\d{0,4})(?<number>\s[1-9][\d]{5,12})(?<extension>\sx\d{0,4})?$";
-
-            String regName = "^[a-zA-z ]*$";
-
-            String regDate = "^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$";
-
-            Boolean nameValid = false;
-
-            Boolean mobileValid = false;
-
-            Boolean dateValid = false;
-
-
-
-            while (nameValid != true)
-
+            try
             {
+                String name = null, phoneNumber = null, dateString = null;
+                Console.WriteLine("Kindly enter following details:");
+                String regex = @"^(?<countryCode>[\+][1-9]{1}[0-9]{0,2}\s)?(?<areaCode>0?[1-9]\d{0,4})(?<number>\s[1-9][\d]{5,12})(?<extension>\sx\d{0,4})?$";
+                String regName = "^[a-zA-z ]*$";
+                String regDate = "^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$";
+                Boolean nameValid = false;
+                Boolean mobileValid = false;
+                Boolean dateValid = false;
 
-
-
-                Console.WriteLine("Enter name: ");
-
-                name = Console.ReadLine();
-
-                nameValid = Regex.IsMatch(name, regName);
-
-
-
-                if (nameValid == false)
+                while (nameValid != true)
 
                 {
+                    Console.WriteLine("Enter name: ");
 
-                    Console.WriteLine("\nEnter proper Name");
+                    name = Utility.StringInput();
+                    nameValid = Regex.IsMatch(name, regName);
+                    if (nameValid == false)
 
+                    {
+                        Console.WriteLine("\nEnter proper Name");
 
+                    }
 
                 }
 
-            }
-
-
-
-            while (mobileValid != true)
-
-            {
-
-                Console.WriteLine("Enter Phone Number: (Ex. 91 XXXXXXXXXX) ");
-
-                phoneNumber = Console.ReadLine();
-
-
-
-                mobileValid = Regex.IsMatch(phoneNumber, regex);
-
-                if (mobileValid == false)
+                while (mobileValid != true)
 
                 {
 
-                    Console.WriteLine("\nEnter proper Mobile number in 91 XXXXXXXXXX");
+                    Console.WriteLine("Enter Phone Number: (Ex. 91 XXXXXXXXXX) ");
+
+                    phoneNumber = Utility.StringInput();
+                    mobileValid = Regex.IsMatch(phoneNumber, regex);
+
+                    if (mobileValid == false)
+
+                    {
+                        Console.WriteLine("\nEnter proper Mobile number in 91 XXXXXXXXXX");
+
+                    }
 
                 }
-
-            }
-
-
-
-            while (dateValid != true)
-
-            {
-
-                Console.WriteLine("Enter date: (Ex. MM/DD/YYYY) ");
-
-                dateString = Console.ReadLine();
-
-
-
-                dateValid = Regex.IsMatch(dateString, regDate);
-
-
-
-                if (dateValid == false)
+                while (dateValid != true)
 
                 {
 
-                    Console.WriteLine("\nEnter proper Date like MM/DD/YYYY");
+                    Console.WriteLine("Enter date: (Ex. MM/DD/YYYY) ");
+
+                    dateString = Utility.StringInput();
+
+                    dateValid = Regex.IsMatch(dateString, regDate);
+                    if (dateValid == false)
+                    {
+                        Console.WriteLine("\nEnter proper Date like MM/DD/YYYY");
+
+                    }
 
                 }
-
+                Console.WriteLine("Hello " + name + " in our system. Your contact nuber is: " + phoneNumber + ".\nPlease let us know in case of any clarification. \nThank you,\nBridge Labs\n" + dateString);
             }
-
-
-
-            Console.WriteLine("Hello " + name + " in our system. Your contact nuber is: " + phoneNumber + ".\nPlease let us know in case of any clarification. \nThank you,\nBridge Labs\n" + dateString);
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
         }
     }

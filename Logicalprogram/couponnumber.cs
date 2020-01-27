@@ -8,10 +8,18 @@ namespace fellowshipleenaroul.Logicalprogram
     {
         public static void coupon()
         {
-            Console.WriteLine(" enter number of times for coupon code");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int count=Utility.coupoN(number);
-            Console.WriteLine(count); 
+            try
+            {
+                Console.WriteLine(" enter number of times for coupon code");
+                int number = Utility.IntegerInput();
+                int count = Utility.couponnumber(number);
+                Console.WriteLine(count);
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
         }
     }

@@ -9,3 +9,14 @@ C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\net
 C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.AssemblyInfo.cs
 C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.dll
 C:\Users\User\source\repos\fellowshipleenaroul\fellowshipleenaroul\obj\Debug\netcoreapp3.0\fellowshipleenaroul.pdb
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.exe
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.deps.json
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.runtimeconfig.json
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.dll
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\bin\Debug\netcoreapp3.0\fellowshipleenaroul.pdb
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\obj\Debug\netcoreapp3.0\fellowshipleenaroul.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\obj\Debug\netcoreapp3.0\fellowshipleenaroul.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\obj\Debug\netcoreapp3.0\fellowshipleenaroul.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\obj\Debug\netcoreapp3.0\fellowshipleenaroul.dll
+C:\Users\Admin\Desktop\Git_Leena\Allprogram\obj\Debug\netcoreapp3.0\fellowshipleenaroul.pdb

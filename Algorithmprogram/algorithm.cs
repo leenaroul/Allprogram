@@ -1,17 +1,15 @@
 ﻿/// <copyright file= algorithm.cs" company="Bridgelabz" >
 /// Company copyright tag
 /// </copyright>
-
+namespace fellowshipleenaroul.Algorithmprogram
+{
 using System;
 using System.Collections.Generic;
 using System.Text;
-
-namespace fellowshipleenaroul.Algorithmprogram
-{
     class algorithm
     {
         /// <summary>
-        /// 
+        /// algorithm class
         /// </summary>
         public static void Algorithm()
         {

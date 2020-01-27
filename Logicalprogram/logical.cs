@@ -14,15 +14,8 @@ using System.Text;
             {
                 Console.WriteLine("1: Gambler ");
                 Console.WriteLine("2: Coupon Code ");
-                Console.WriteLine("3: Merge Sort ");
-                Console.WriteLine("4: Binary Search  ");
-                Console.WriteLine("5: Guessing Number ");
-                Console.WriteLine("6: Prime Number in given range");
-                Console.WriteLine("7: Prime Anagram Palindrome ");
-                Console.WriteLine("8: Anagram checking String");
-                Console.WriteLine("9: Permutation String");
-                Console.WriteLine("10: Customize Message Demonstration using String Function and RegEx ");
-                Console.WriteLine("11: Exit ");
+                Console.WriteLine("3: Tic tac toe ");
+                Console.WriteLine("4: Exit ");
                 Console.WriteLine(" ");
                 Console.WriteLine(" enter your choice");
 
@@ -39,35 +32,10 @@ using System.Text;
                         break;
 
                     case 3:
-                        
+                        Tictactoe.tictactoe();
                         break;
-
                     case 4:
-                        
-                        break;
-
-                    case 5:
-                        
-                        break;
-
-                    case 6:
-                        
-                        break;
-                    case 7:
-                        
-                        break;
-                    case 8:
-                        
-                        break;
-                    case 9:
-                        
-                        break;
-                    case 10:
-                        
-                        break;
-
-                    case 11:
-                        Console.WriteLine("Algorithm Program Exit");
+                        Console.WriteLine("Logical Program Exit");
                         flag = false;
                         break;
 

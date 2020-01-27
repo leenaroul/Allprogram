@@ -1,9 +1,10 @@
-﻿using System;
+﻿namespace fellowshipleenaroul.Algorithmprogram
+{
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace fellowshipleenaroul.Algorithmprogram
-{
+
     class Bubblesort
     {
         public static void bubble()
@@ -12,12 +13,12 @@ namespace fellowshipleenaroul.Algorithmprogram
 
             {
                 Console.WriteLine(" enter number of input");
-                int number = Convert.ToInt32(Console.ReadLine());
+                int number = Utility.IntegerInput();
                 int[] arr = new int[number];
                 Console.WriteLine(" enter {0} number of array ", number);
                 for (int i = 0; i < number; i++)
                 {
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                    arr[i] = Utility.IntegerInput();
                 }
                 Utility.Bubblesort(number, arr);
 

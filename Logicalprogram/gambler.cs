@@ -9,13 +9,20 @@ using System.Text;
     {
         public static void gamble()
         {
+            try
+            { 
             Console.WriteLine(" enter number of stakes");
-            int stakes = Convert.ToInt32(Console.ReadLine());
+            int stakes = Utility.IntegerInput();
             Console.WriteLine(" enter  Goal");
-            int goal = Convert.ToInt32(Console.ReadLine());
+            int goal = Utility.IntegerInput();
             Console.WriteLine(" enter number of times");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int num = Utility.IntegerInput();
             Utility.Gambblr(stakes, goal, num);
-        }
+            }
+           catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+}
     }
 }

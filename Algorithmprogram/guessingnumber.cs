@@ -1,9 +1,10 @@
-﻿using System;
+﻿namespace fellowshipleenaroul.Algorithmprogram
+{
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace fellowshipleenaroul.Algorithmprogram
-{
+
     class guessingnumber
     {
         public static void GuessnumberInput()
@@ -11,9 +12,9 @@ namespace fellowshipleenaroul.Algorithmprogram
             try
             {
                 Console.WriteLine("Enter Lower boundary of number");
-                int lower = Convert.ToInt32(Console.ReadLine());
+                int lower = Utility.IntegerInput();
                 Console.WriteLine("Enter Upperer boundary of number");
-                int upper = Convert.ToInt32(Console.ReadLine());
+                int upper = Utility.IntegerInput();
                 Utility.GuessNumberWorking(lower, upper);
             }
             catch (Exception ex)

@@ -8,11 +8,18 @@ namespace fellowshipleenaroul.functionprogram
     {
         public static void twodarray ()
         {
-            Console.WriteLine(" enter value for row");
-            int row = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(" enter value for colomn");
-            int colm = Convert.ToInt32(Console.ReadLine());
-            Utility.twoDarray(row, colm);
+            try
+            {
+                Console.WriteLine(" enter value for row");
+                int row = Utility.IntegerInput();
+                Console.WriteLine(" enter value for colomn");
+                int colm = Utility.IntegerInput();
+                Utility.twoDarray(row, colm);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
